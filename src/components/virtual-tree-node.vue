@@ -13,7 +13,7 @@
       'is-last': lastItem,
       'is-user-node': node.isLeaf,
     }"
-    :style="{'--item-size': lineToIcon + 'px','--top': lineToTop + 'px'}"
+    :style="{'--item-size': lineToIcon + 'px'}"
     role="treeitem"
     tabindex="-1"
     :aria-expanded="expanded"
@@ -201,8 +201,5 @@ export default {
   height: 1px;
   background-color: #d9d9d9;
   content: "";
-}
-.is-last .ele-tree-indent::before{
-  bottom: var(--item-size);
 }
 </style>
